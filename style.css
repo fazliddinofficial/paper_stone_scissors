@@ -1,0 +1,308 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --bt-color: rgba(16, 164, 248, 1);
+  --white: rgba(255, 255, 255, 1);
+  --bg-color: rgba(196, 196, 196, 0.1);
+  --border-color: rgba(229, 229, 229, 1);
+  --span-color: rgba(180, 177, 177, 1);
+  --regular-grey: rgba(201, 209, 211, 1);
+  --green: rgba(11, 212, 164, 1);
+}
+.container {
+  margin: 17px;
+}
+.part__one {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  text-align: center;
+  margin-top: 5%;
+}
+.hands-img {
+  width: 400px;
+}
+
+.section-head-button-one,
+.section-head-button-two {
+  background-color: var(--bt-color);
+  padding: 20px;
+  margin: 30px 90px;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35.16px;
+  text-align: left;
+  color: var(--white);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.section-head-button-one:hover,
+.section-head-button-two:hover,
+.section__two-button:hover {
+  box-shadow: 0px 9px 20px 0px black;
+}
+
+.stone__hand,
+.paper__hand,
+.scissors__hand {
+  background-color: var(--bg-color);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+.stone__hand-img,
+.paper__hand-img,
+.scissors__hand-img {
+  width: 120px;
+}
+
+.part__two-p {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.78px;
+  text-align: left;
+  color: var(--span-color);
+  text-align: center;
+}
+.participants__view {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 200px;
+}
+.cont__wrapper {
+  margin: 0 17px;
+  display: flex;
+}
+.part__one__view-item {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  font-size: 100px;
+  font-weight: 700;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  color: var(--regular-grey);
+}
+.viewport-img {
+  width: 100%;
+}
+.section__two-h1 {
+  font-family: "Roboto";
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 117.19px;
+  text-align: left;
+  color: var(--regular-grey);
+  margin: 60px;
+}
+.part__one__view,
+.part__two__view {
+  text-align: center;
+}
+.part__one__view-p {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.5px;
+  color: var(--span-color);
+  margin: 27px;
+}
+.section__two-button {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35.16px;
+  text-align: left;
+  padding: 10px 100px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--green);
+  color: var(--white);
+  transition: 0.5s;
+}
+.items__wrapper {
+  margin: 100px 0;
+}
+.part__four {
+  display: flex;
+}
+.aside {
+  width: 18%;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+.aside-h1 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  color: var(--span-color);
+}
+.aside-ol-li {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  color: var(--span-color);
+}
+.aside__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 17px;
+}
+.content__wrapper-span {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25.78px;
+  text-align: left;
+  color: var(--span-color);
+}
+.part__two-h1 {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 79.69px;
+  color: rgba(240, 221, 53, 1);
+  display: none;
+}
+.part__two,
+.part__three,
+.part__four
+{
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .hands-img {
+    width: 250px;
+  }
+  .part__two {
+    background-color: dodgerblue;
+  }
+  .participants__view {
+    padding: 50px 100px;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .part__two {
+    background-color: purple;
+  }
+  .participants__view {
+    padding: 25px 50px;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 991px) {
+  .part__two {
+    background-color: gray;
+  }
+  .participants__view {
+    padding: 25px 50px;
+    justify-content: space-around;
+  }
+  .cont__wrapper {
+    flex-direction: column;
+  }
+  .cont__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .section__two-h1 {
+    font-size: 77px;
+    margin: 30px;
+  }
+  .items__wrapper {
+    background-color: aqua;
+    width: 15%;
+  }
+  .part__one__view-item {
+    width: 150px;
+    height: 150px;
+  }
+  .stone__hand-img,
+  .paper__hand-img,
+  .scissors__hand-img {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .part__two {
+    background-color: grey;
+  }
+  .section__two-h1 {
+    margin: 15px;
+    font-size: 40px;
+  }
+  .stone__hand-img,
+  .paper__hand-img,
+  .scissors__hand-img {
+    width: 50px;
+  }
+  .part__one__view-item {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .section__two-button {
+    padding: 10px 50px;
+  }
+  .part__two__view {
+    margin: auto;
+  }
+  .part__two-p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .part__two {
+    background-color: burlywood;
+  }
+  .section__two-h1 {
+    text-align: center;
+  }
+  .cont__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 490px) {
+  .section-head-button-one {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .section-head-button-one {
+    padding: 10px;
+  }
+}

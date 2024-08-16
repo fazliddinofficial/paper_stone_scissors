@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <section id="part__one__id" class="part__one">
+        <div class="container">
+            <div class="wrapper">
+                <img class="hands-img" src="./img/Screen Shot 2021-11-30 at 10.19 1.png" alt="img">
+                <div class="button__wrapper">
+                    <button onclick="toStartButtonOne()" type="button" class="section-head-button-one">Play with
+                        computer</button>
+                    <button type="button" class="section-head-button-two section-head-button-one">Play with
+                        friends</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="part__two__id" class="part__two">
+        <h1 id="final-word" class="part__two-h1"></h1>
+        <div class="cont__wrapper container">
+            <div class="items__wrapper">
+                <div class="stone__hand">
+                    <img onclick="whenClick('rock')" id="handImg" class="stone__hand-img" src="./img/leadership.png"
+                        alt="img">
+                    <p class="part__two-p">Rock</p>
+                </div>
+                <div class="paper__hand">
+                    <img onclick="whenClick('hand')" class="paper__hand-img" src="./img/hand.png" alt="img">
+                    <p class="part__two-p">Paper</p>
+                </div>
+                <div class="scissors__hand">
+                    <img onclick="whenClick('scissors')" class="scissors__hand-img" src="./img/scissors.png" alt="img">
+                    <p class="part__two-p">Scissors</p>
+                </div>
+            </div>
+            <div class="participants__view">
+                <div class="cont__wrapper">
+                    <div class="part__one__view">
+                        <p class="part__one__view-item">
+                            <img id="questionImg" class="viewport-img" src="./img/question.png" alt="img">
+                        </p>
+                        <p class="part__one__view-p">You</p>
+                    </div>
+                    <h1 class="section__two-h1">VS</h1>
+                    <div class="part__two__view">
+                        <p class="part__one__view-item">
+                            <img id="secondPlayere" class="viewport-img" src="./img/question.png" alt="img">
+                        </p>
+                        <p class="part__one__view-p">Computer</p>
+                    </div>
+                </div>
+                <button onclick="whenClick()" type="button" class="section__two-button">Start</button>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
